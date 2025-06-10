@@ -13,7 +13,7 @@
     "build": "turbo run build",
     "build:backend": "turbo run build:backend",
     "build:frontend": "turbo run build:frontend",
-    "build:nodes": "turbo run build:nodes",
+    "build:nodes": "NODE_OPTIONS=--max-old-space-size=8192 turbo run build:nodes",
     "typecheck": "turbo typecheck",
     "dev": "turbo run dev --parallel --env-mode=loose --filter=!@n8n/design-system --filter=!@n8n/chat --filter=!@n8n/task-runner",
     "dev:be": "turbo run dev --parallel --env-mode=loose --filter=!@n8n/design-system --filter=!@n8n/chat --filter=!@n8n/task-runner --filter=!n8n-editor-ui",
